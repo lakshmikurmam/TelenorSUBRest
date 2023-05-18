@@ -6,6 +6,7 @@ const clientId = 'f44a7c6a-219f-417d-9a1d-f2bafd38ad53';
 const host = '10.246.0.10:1883';
 const MQTT_TOPIC = 'MC/V1/testing';
 const MQTT_QOS = 1;
+//var client = mqtt.connect('mqtt://test.mosquitto.org:1883');
 const client = mqtt.connect(`mqtt://${username}:${password}@${host}`, {
     clientId,
     clean: true,
